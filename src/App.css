@@ -84,8 +84,6 @@
 }
 .heroContainer {
   width: 100%;
-  /* overflow: hidden; */
-  height: 200vh;
 }
 .navmenuCont {
   position: sticky;
