@@ -20,7 +20,7 @@ function UserInfo(props) {
     else {
         return (<div className="userInner">
             <div className="imgContUser">
-                <img src={profile_pic} alt="Profic Picture"/>
+                <img src={profile_pic} alt="Profile"/>
             </div>
             <div className="userName">
                 {props.isLogin}

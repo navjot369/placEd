@@ -35,7 +35,7 @@ function InnerStats(props) {
 function Section2() {
   return (
     <div className="sec2Cont">
-        <img src={statsBackground} alt="Stats Background Image"/>
+        <img src={statsBackground} alt="Stats Background"/>
       <div className="sec2Inner">
         <div className="sec2Question">
           Are you going to be placed<span> ?</span>
