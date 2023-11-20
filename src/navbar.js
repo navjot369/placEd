@@ -20,7 +20,7 @@ function UserInfo(props) {
     else {
         return (<div className="userInner">
             <div className="imgContUser">
-                <img src={profile_pic} />
+                <img src={profile_pic} alt="Profic Picture"/>
             </div>
             <div className="userName">
                 {props.isLogin}
@@ -38,7 +38,7 @@ function SearchBar() {
     return (
         <div className="search-container-outer">
             <button className="search-container-inner" onClick={clickit}>
-                <img src={searchSymbol} />
+                <img src={searchSymbol} alt="Search Symbol"/>
                 <input type="text" name="query" placeholder="Search our resources" ref={inputText}/>
             </button>
         </div>

@@ -19,7 +19,7 @@ function HeroSection() {
         </div>
       </div>
       <div className="heroRight">
-        <img src={DataScience_pic} />
+        <img src={DataScience_pic} alt="Data Science Logo"/>
       </div>
     </div>
   );
@@ -35,7 +35,7 @@ function InnerStats(props) {
 function Section2() {
   return (
     <div className="sec2Cont">
-        <img src={statsBackground} />
+        <img src={statsBackground} alt="Stats Background Image"/>
       <div className="sec2Inner">
         <div className="sec2Question">
           Are you going to be placed<span> ?</span>
