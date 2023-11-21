@@ -1,7 +1,6 @@
 import DataScience_pic from "./Images/data-science.png";
 import "./Sections.css";
 import statsBackground from './Images/stats-bacground.jpg';
-import Uspbackground from './Images/USP_wallpaper.jpg';
 
 function HeroSection() {
   return (
@@ -53,7 +52,7 @@ function Section2() {
 
 function Usp1(props) {
     return(<div className="UspContainer">
-        <div className="UspLeftCont">
+        <div className="UspLeftCont" >
             <div className="UspTitle">Usp {props.num} Title Provided</div>
             <div className="UspDesc">Description of USP {props.num}</div>
             <div className="UspIconsCont">
@@ -65,7 +64,7 @@ function Usp1(props) {
             </div>
         </div>
         <div className="UspRightCont">
-            <img src={Uspbackground} alt="Coding Background"/>
+            <img src={props.background} alt="Coding Background"/>
             <div className="imgRound">&quot;From Learning to Earning&quot;</div>
         </div>
     </div>

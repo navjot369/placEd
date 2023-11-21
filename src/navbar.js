@@ -2,13 +2,14 @@ import profile_pic from './Images/profile_pic.jpg';
 import searchSymbol from './Images/loupe.png';
 import { useRef } from 'react';
 
-function Navbar(props) {
-    return (<div className="navbar">
-        <div className="logo">plac<span>Ed</span></div>
-        <div className="userinfo">
+function AppLogo(props) {
+    return (<div className="logo">plac<span>Ed</span></div>); 
+}
+
+function UserAccount(props) {
+    return(<div className="userinfo">
             <UserInfo isLogin={props.isLogin} />
-        </div>
-    </div>);
+        </div>);
 }
 
 function UserInfo(props) {
@@ -55,4 +56,4 @@ function NavMenu() {
     </div>);
 }
 
-export {Navbar, SearchBar, NavMenu};
+export {AppLogo, UserAccount, SearchBar, NavMenu};
