@@ -1,7 +1,6 @@
 import DataScience_pic from "./Images/data-science.png";
 import "./Sections.css";
 import statsBackground from './Images/stats-bacground.jpg';
-import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function HeroSection() {
