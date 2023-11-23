@@ -1,6 +1,8 @@
 import DataScience_pic from "./Images/data-science.png";
 import "./Sections.css";
 import statsBackground from './Images/stats-bacground.jpg';
+import React, { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
@@ -8,7 +10,7 @@ function HeroSection() {
       <div className="heroLeft">
         <div className="tagline1Cont">
           <div className="tagline1">
-            100% Placement <br /> Gaurantee
+            From projects to placement
           </div>
           <div className="tag1Desc">
             Here will be a short desciption of tagline
@@ -71,6 +73,34 @@ function Usp1(props) {
     );
 }
 
+function Course1(props) {
+  return(<div className="CourseCont">
+    <div className="CourseHeading">{props.title}</div>
+    <div className="CourseContInner">
+      <div className="ContLeft">
+        <div className="featureList">
+          <ul>
+            <li>{props.feat1}</li>
+            <li>{props.feat2}</li>
+            <li>{props.feat3}</li>
+          </ul>
+        </div>
+        <div className="exploreCont">
+          <button><Link to={props.linkTo} className="linkHere">{props.buttCont}</Link></button>
+        </div>
+      </div>
+      <div className="ContRight">
+        <img src={props.image} alt="Course Display" />
+      </div>
+    </div>
+  </div>);
+}
+
+function Footer() {
+  return (<div className="footer">
+    <h1>Made With &hearts;</h1>
+  </div>);
+}
 
 
-export { HeroSection, Section2, Usp1 };
+export { HeroSection, Section2, Usp1, Course1, Footer };

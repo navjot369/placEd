@@ -1,6 +1,7 @@
 import profile_pic from './Images/profile_pic.jpg';
 import searchSymbol from './Images/loupe.png';
-import { useRef } from 'react';
+import React, { useRef } from 'react';
+import { Outlet, Link } from 'react-router-dom';
 
 function AppLogo(props) {
     return (<div className="logo">plac<span>Ed</span></div>); 
@@ -49,9 +50,9 @@ function SearchBar() {
 function NavMenu() {
     return (<div className="navmenuCont">
         <div className="navMenuInner">
-        <button className="navOpt">Data Science MasterClass</button>
-        <button className="navOpt">Data Science Resources</button>
-        <button className="navOpt">Meet your Speaker</button>
+        <Link to={'/course/'} className="navOpt">Data Science MasterClass</Link>
+        <a className="navOpt">Data Science Resources</a>
+        <a className="navOpt">Meet your Speaker</a>
         </div>
     </div>);
 }
