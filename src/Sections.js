@@ -2,6 +2,7 @@ import DataScience_pic from "./Images/data-science.png";
 import "./Sections.css";
 import statsBackground from './Images/stats-bacground.jpg';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 function HeroSection() {
   return (
