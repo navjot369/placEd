@@ -1,0 +1,39 @@
+.heroSectionCont {
+    background-color: #b0ca90;
+    position: relative;
+}
+.sec1Left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(90deg, #b0ca90 80%, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+.sec1Right {
+    display: flex;
+    z-index: 4;
+    justify-content: flex-end;
+}
+.CourseName {
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+}
+.CourseDesp {
+    font-style: italic;
+    color: #2d460e;
+}
+.CourseRegisCont {
+    display: flex;
+    justify-content: center;
+}
+.Video1{
+    height: 500px;
+
+}

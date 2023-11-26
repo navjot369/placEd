@@ -256,7 +256,7 @@
 }
 .footer {
     margin-top: 100px;
-    background-color: rgb(184, 177, 177);
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
