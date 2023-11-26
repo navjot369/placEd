@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-.heroSectionCont {
-    background-color: #b0ca90;
-=======
 :root {
     --color1: #b0ca90;
 }
@@ -10,7 +6,6 @@
 }
 .heroSectionCont {
     background-color: var(--color1);
->>>>>>> 3d8e3fc (Add course landing page features)
     position: relative;
 }
 .sec1Left {
@@ -19,11 +14,7 @@
     height: 100%;
     top: 0;
     left: 0;
-<<<<<<< HEAD
-    background-image: linear-gradient(90deg, #b0ca90 80%, transparent);
-=======
     background-image: linear-gradient(90deg, var(--color1) 80%, transparent);
->>>>>>> 3d8e3fc (Add course landing page features)
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -47,12 +38,6 @@
 .CourseRegisCont {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-}
-.Video1{
-    height: 500px;
-
-=======
     width: 60%;
 }
 .RegisLink{
@@ -173,5 +158,4 @@
     font-size: 2.5rem;
     font-style: italic;
     background-color:rgb(184, 182, 182);
->>>>>>> 3d8e3fc (Add course landing page features)
 }
