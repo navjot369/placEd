@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 .heroSectionCont {
     background-color: #b0ca90;
+=======
+:root {
+    --color1: #b0ca90;
+}
+* {
+    box-sizing: border-box;
+}
+.heroSectionCont {
+    background-color: var(--color1);
+>>>>>>> 3d8e3fc (Add course landing page features)
     position: relative;
 }
 .sec1Left {
@@ -8,7 +19,11 @@
     height: 100%;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     background-image: linear-gradient(90deg, #b0ca90 80%, transparent);
+=======
+    background-image: linear-gradient(90deg, var(--color1) 80%, transparent);
+>>>>>>> 3d8e3fc (Add course landing page features)
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -32,8 +47,131 @@
 .CourseRegisCont {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
 }
 .Video1{
     height: 500px;
 
+=======
+    width: 60%;
+}
+.RegisLink{
+    background-color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.RegisLink:hover {
+    color: grey;
+    padding: 10px 35px;
+}
+.Video1{
+    height: 500px;
+}
+.BelowCont{
+    background-image: linear-gradient(180deg, var(--color1) 50%, transparent 50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+.Boxusp {
+    width: 20%;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px grey;
+    background-color: white;
+    padding: 10px 20px;
+    transition: 1s;
+}
+.Boxusp:hover {
+    box-shadow: 0 0 20px 1px rgb(68, 66, 66);
+}
+.featureTagline {
+    margin: 90px 0 40px 0;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 3.2rem;
+}
+.featureCont {
+    margin: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.FeatBox {
+    padding: 30px;
+    width: 25%;
+    height: 200px;
+    border: 1px solid grey;
+    box-shadow: 0 0 4px grey;
+    border-radius: 10px;
+    border-left-width: 10px;
+}
+.featureLine {
+    font-size: 1.5rem;
+    color: yellowgreen;
+}
+.hiringCont {
+    margin: 100px 10px;
+}
+.hiringTagline {
+    color: black;
+    font-size: 3rem;
+    border-width: 3px 0;
+    text-align: center;
+    background-image: linear-gradient(90deg, transparent 30%, rgb(204, 197, 197) , transparent 70%);
+}
+.iconsCont {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    align-items: center;
+}
+.CompIcon {
+    border: 3px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+}
+.andMore {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+.SpeakerCont {
+    margin: 60px 30px;
+    display: grid;
+    grid-template-columns: 10px 2fr 3fr;
+}
+.SpeakerStart {
+    background-color: var(--primary-color);
+}
+.SpeakerLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+.SpeakerTitle {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+.nameHere {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.desigHere {
+    font-style: italic;
+}
+.SpeakerRight {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    background-color:rgb(184, 182, 182);
+>>>>>>> 3d8e3fc (Add course landing page features)
 }
