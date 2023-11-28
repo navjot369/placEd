@@ -5,6 +5,7 @@ import App from './App';
 import { Course } from './CoursePage/course.js';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Resource from './ResourcePage/resource.js';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/course/",
     element: <Course />
+  },
+  {
+    path: "/resources/",
+    element: <Resource />
   }
 ]);
 

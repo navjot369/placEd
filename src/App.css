@@ -136,3 +136,9 @@
 .navOpt:hover {
   color: var(--secondary-color);
 }
+.activeLink {
+  color: rgb(8, 133, 211);
+}
+.activeLink:hover {
+  color: rgb(8, 133, 211);
+}
