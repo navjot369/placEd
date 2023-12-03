@@ -76,11 +76,13 @@
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  background-color: white;
 }
 .search-container-inner {
   max-width: 70%;
   width: 50vw;
   border: 3px solid grey;
+  background-color: white;
   border-radius: 50px;
   padding: 5px 10px;
   display: flex;
@@ -130,6 +132,7 @@
   font-weight: bold;
   z-index: 13;
   margin: 0 10px;
+  min-width: 37%;
   font-family: inherit;
   text-decoration: none;
 }

@@ -1,10 +1,9 @@
 import './App.css';
 import React from 'react';
 import { AppLogo, UserAccount, SearchBar, NavMenu } from './navbar.js';
-import { HeroSection, Section2, Usp1, Course1, Footer } from './Sections.js';
-import Uspbackground1 from './Images/USP_wallpaper.jpg';
-import Uspbackground2 from './Images/USP_wallpaper2.webp';
-import Uspbackground3 from './Images/USP_wallpaper3.webp';
+import { HeroSection, Section2, Usp1, Usp2, Usp3, Course1, Footer } from './Sections.js';
+import Uspbackground2 from './Images/USP_wallpaper2.jpg';
+import Uspbackground3 from './Images/USP_wallpaper3.jpg';
 
 function App() {
   return (<div id="container">
@@ -15,11 +14,11 @@ function App() {
       <NavMenu />
       <HeroSection />
       <Section2 />
-      <Usp1 num="1" background={Uspbackground1}/>
-      <Usp1 num="2" background={Uspbackground2}/>
-      <Usp1 num="3" background={Uspbackground3}/>
-      <Course1 title="Data Science Masterclass" feat1="feature1" feat2="feature2" feat3="feature3" linkTo="/course/" buttCont="Explore Course" image={Uspbackground2}/>
-      <Course1 title="Meet your Speaker" feat1="Experience 1" feat2="Experience 2" feat3="Experience 3" linkTo="/course/" buttCont="Meet the Speaker" image={Uspbackground3}/>
+      <Usp1 />
+      <Usp2 />
+      <Usp3 />
+      <Course1 title="Placement Assured Programs" feat={["Industry Proven Curricullum" ,"Real-Life Projects" ,"Live 1-on-1 classess" ,"Flexible learning"]} linkTo="/course/" buttCont="Explore Course" image={Uspbackground2}/>
+      <Course1 title="Meet your Speaker" feat={["Top Kaggle Expert", "Years of Experience in Data Science", "Worked at MNC’s of ZS,Tatras Data & More"]} linkTo="/course/" buttCont="Meet the Speaker" image={Uspbackground3}/>
       <Footer />
     </div>
   </div>);

@@ -6,8 +6,8 @@ export default function Section1() {
     return (<div className="heroSectionCont">
         <div className="sec1Left">
             <div>
-            <div className="CourseName">Data Science MasterClass</div>
-            <div className="CourseDesp">Understanding Data Science with projects</div>
+            <div className="CourseName">Placed Data Science Bootcamp</div>
+            <div className="CourseDesp">A complete exposure to the Technologies in Data Science Backed with a 100% placement assurance </div>
             </div>
             <div className="CourseRegisCont"><Link to={'/'} className="RegisLink">Register Now</Link></div>
         </div>
