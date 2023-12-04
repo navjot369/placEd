@@ -3,10 +3,9 @@ import React from "react";
 export default function UspSection() {
   return (
     <div className="BelowCont">
-      <BoxInner num="1" />
-      <BoxInner num="2" />
-      <BoxInner num="3" />
-      <BoxInner num="4" />
+      <BoxInner cont="100% Assured Placement" />
+      <BoxInner cont="Pay when Placed" />
+      <BoxInner cont="Learning With Projects" />
     </div>
   );
 }
@@ -15,6 +14,6 @@ export default function UspSection() {
 
 function BoxInner(props) {
     return(
-        <div className="Boxusp">Box {props.num}</div>
+        <div className="Boxusp"><div>{props.cont}</div></div>
     );
 }

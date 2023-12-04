@@ -6,6 +6,9 @@ import React from "react";
 import Uspbackground1 from './Images/USP_wallpaper.jpg';
 import Uspbackground2 from './Images/USP_wallpaper2.jpg';
 import Uspbackground3 from './Images/USP_wallpaper3.jpg';
+import staticon1 from './Images/unemployment.png';
+import staticon2 from './Images/employee.png';
+import staticon3 from './Images/recruitment.png';
 
 function HeroSection() {
   return (
@@ -16,11 +19,11 @@ function HeroSection() {
             From Projects To Placements with Placed
           </div>
           <div className="tag1Desc">
-            Pay only after you are placed above 5LP A  or above with Placed
+            Pay only after you are placed above 5LP or above with Placed
           </div>
         </div>
         <div className="tagbutton">
-          <button>Explore Programs</button>
+          <Link to="/course/" className="courseButton">Explore Programs</Link>
         </div>
       </div>
       <div className="heroRight">
@@ -33,8 +36,8 @@ function HeroSection() {
 function InnerStats(props) {
   return (
     <div className="StatsBox">
-      <div className="statsValue">{props.value}</div>
-      <div className="statsPara">{props.desp}</div>
+      <div className="statsImg"><img src={props.icon} className="staticon" alt="Stats display"/></div>
+      <div className="statsPara"><span className="statsValue">{props.value} </span> {props.desp}</div>
     </div>
   );
 }
@@ -50,15 +53,18 @@ function Section2() {
         <div className="StatsCont">
           <InnerStats
             value="49.3%"
-            desp="of youth Are “Unemployable” as of 2023"
+            desp="of youth are “Unemployable” as of 2023"
+            icon={staticon1}
           />
           <InnerStats
             value="42.3%"
-            desp="of educated youth are Unemployed as of 2023"
+            desp="of educated youth are “Unemployed” as of 2023"
+            icon={staticon2}
           />
           <InnerStats
             value="58%"
-            desp="Youth Fails to secure a Campus Placement"
+            desp="of youth fails to secure a Campus Placement"
+            icon={staticon3}
           />
         </div>
       </div>
@@ -78,7 +84,7 @@ when you’ll be placed over 4LPA</div>
           <div className="icon1">&#9786;</div>
         </div>
         <div className="uspButton">
-          <button>Explore Programs</button>
+          <Link className="courseUsp" to="/course/">Explore Programs</Link>
         </div>
       </div>
       <div className="UspRightCont">
@@ -102,7 +108,7 @@ function Usp2(props) {
         </div>
         <div className="more">&amp;more</div>
         <div className="uspButton">
-          <button>Explore Programs</button>
+        <Link className="courseUsp" to="/course/">Explore Programs</Link>
         </div>
       </div>
       <div className="UspRightCont">
@@ -125,7 +131,7 @@ function Usp3(props) {
           <div className="icon1">&#9786;</div>
         </div>
         <div className="uspButton">
-          <button>Explore Programs</button>
+        <Link className="courseUsp" to="/course/">Explore Programs</Link>
         </div>
       </div>
       <div className="UspRightCont">

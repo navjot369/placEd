@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 function AppLogo(props) {
-    return (<div className="logo">plac<span>Ed</span></div>); 
+    return (<div className="logo"><Link to="/" className="indexLink">plac<span>Ed</span></Link></div>); 
 }
 
 function UserAccount(props) {
@@ -52,7 +52,7 @@ function NavMenu() {
         <div className="navMenuInner">
         <Link to={'/course/'} className="navOpt">Placement Assured Programs</Link>
         <Link to={'/resources/'} className="navOpt">Placed Resources</Link>
-        <Link to={'/course/'} className="navOpt">Speakers at Placed</Link>
+        <Link to={'/speaker/'} className="navOpt">Speakers at Placed</Link>
         </div>
     </div>);
 }

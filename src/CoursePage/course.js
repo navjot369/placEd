@@ -8,9 +8,13 @@ import Features from './FeaturesSec.js';
 import HiringSec from './HiringSection.js';
 import SpeakerSec from './SpeakerSec.js';
 import { Footer } from './../Sections.js';
+import { useEffect } from 'react';
 
 
 function Course() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (<div>
         <AppLogo />
         <UserAccount isLogin=""/>

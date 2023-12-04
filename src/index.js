@@ -6,6 +6,7 @@ import { Course } from './CoursePage/course.js';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Resource from './ResourcePage/resource.js';
+import Speaker from './SpeakerPage/speaker.js';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/resources/",
     element: <Resource />
+  },
+  {
+    path: "/speaker/",
+    element: <Speaker />
   }
 ]);
 

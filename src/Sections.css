@@ -43,12 +43,10 @@
     font-style: italic;
 }
 .tagbutton {
+    width: 100%;
     display: flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
 }
-.tagbutton button {
+.courseButton {
     background-color: rgb(0, 107, 172);
     border: none;
     color: white;
@@ -56,11 +54,13 @@
     border-radius: 5px;
     font-size: 1.3rem;
     transition: 0.5s;
+    text-decoration: none;
 }
-.tagbutton button:hover {
+
+.courseButton:hover {
     transform: translate(-4px, -4px);
     box-shadow: 3px 3px #444;
-    color: #ccc;
+    color: #eee;
 }
 .heroRight img{
     width: 70%;
@@ -115,23 +115,35 @@
     justify-content: center;
 }
 .StatsBox {
-    background-color: rgba(137, 129, 129, 0.5);
+    background-color: rgba(215, 212, 212, 0.5);
     display: flex;
     flex-direction: column;
     padding: 20px;
-    width: 330px;
-    height: 260px;
-    border-radius: 20px;
+    width: 30%;
+    min-height: 260px;
+    border-radius: 10px;
     margin: 10px 10px;
+    box-shadow: 3px 3px 3px 3px rgb(192, 189, 189);
+}
+.statsImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.staticon {
+    height: 95px;
 }
 .statsPara {
     font-size: 1.4rem;
-    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
 }
 .statsValue {
     font-size: 2.8rem;
     font-weight: bold;
     margin: 10px 0;
+    color: var(--primary-color);
 }
 .UspContainer {
     display: grid;
@@ -148,7 +160,7 @@
     --color2: #2b2d2c;
 }
 .usp3Cont {
-    --color1: #035492;
+    --color1: #3d435d;
     --color2: #0a1a37;
 }
 .UspLeftCont {
@@ -177,13 +189,13 @@
 }
 .more {
     font-size: 1.5rem;
-    margin-top: -20px;
+    margin: -20px 0 20px 0;
 }
 .icon1 {
     font-size: 60px;
     margin: 9px;
 }
-.uspButton button{
+.courseUsp {
     background-color: var(--color2);
     padding: 10px 20px;
     border: 1px solid var(--color2);
@@ -192,8 +204,9 @@
     border-radius: 5px;
     margin: 10px 0;
     transition: 0.6s;
+    text-decoration: none;
 }
-.uspButton button:hover {
+.courseUsp:hover {
     border-color: white;
     border-radius: 10px;
 }
