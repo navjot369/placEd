@@ -19,8 +19,7 @@ function HeroSection() {
             From Projects To Placements with Placed
           </div>
           <div className="tag1Desc">
-            Pay only after you are placed above 5LP or above with Placed
-          </div>
+            Pay only after you are placed above 5LP</div>
         </div>
         <div className="tagbutton">
           <Link to="/course/" className="courseButton">Explore Programs</Link>

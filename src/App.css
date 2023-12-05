@@ -85,9 +85,9 @@
 .search-container-inner {
   max-width: 70%;
   width: 50vw;
-  border: 3px solid grey;
+  border: 1px solid grey;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 6px;
   padding: 5px 10px;
   display: flex;
   align-items: center;
