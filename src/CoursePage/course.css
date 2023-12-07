@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+
 :root {
-    --color1: #b0ca90;
+    --color1: #021028;
+}
+.course-Cont {
+    font-family: 'Montserrat', sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -19,8 +24,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding: 0 20px;
-    text-align: center;
+    padding: 0 50px;
 }
 .sec1Right {
     display: flex;
@@ -28,25 +32,27 @@
     justify-content: flex-end;
 }
 .CourseName {
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
     width: 70%;
-    font-weight: 500;
+    font-weight: bold;
 }
 .CourseDesp {
-    font-style: italic;
-    color: #2d460e;
+    color: #efefef;
+    font-size: 1.6rem; 
     width: 70%;
-    margin-top: 40px;
+    font-weight: 500;
+    margin-top: 20px;
 }
 .CourseRegisCont {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 60%;
 }
 .RegisLink{
-    background-color: var(--primary-color);
+    background-color: rgb(222, 55, 55);
     font-size: 1.5rem;
+    font-weight: 500;
     padding: 10px 30px;
     border-radius: 10px;
     color: white;
@@ -69,20 +75,19 @@
 }
 .Boxusp {
     width: 30%;
-    height: 150px;
     border-radius: 10px;
-    box-shadow: 0 0 20px grey;
+    box-shadow: 0 0 10px  rgb(22, 21, 21);
     background-color: white;
-    padding: 10px 20px;
+    padding: 40px;
     transition: 1s;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .Boxusp div {
     font-size: 1.7rem;
-    color: var(--primary-color);
     font-weight: 500;
+    margin: 10px 0;
 }
 .Boxusp:hover {
     box-shadow: 0 0 20px 1px rgb(68, 66, 66);

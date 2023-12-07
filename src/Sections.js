@@ -9,15 +9,26 @@ import Uspbackground3 from './Images/USP_wallpaper3.jpg';
 import staticon1 from './Images/unemployment.png';
 import staticon2 from './Images/employee.png';
 import staticon3 from './Images/recruitment.png';
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 function HeroSection() {
+  const [text] = useTypewriter({
+    words: ['From Projects to Placement'],
+    loop: {},
+    });
   return (
     <div className="heroCont">
       <div className="heroLeft">
         <div className="tagline1Cont">
-          <div className="tagline1">
-            From Projects To Placements with Placed
+        <div className="tagline1">
+          <div className="taglineVir">
+            From Projects to Placement
           </div>
+          <div className="taglineAct">
+            <span>{ text }</span><span><Cursor /></span>
+            </div>
+          </div>
+          <div className="tagline1 tagline-bottom">With Placed</div>
           <div className="tag1Desc">
             Pay only after you are placed above 5LP</div>
         </div>

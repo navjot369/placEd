@@ -20,23 +20,28 @@
 .tagPrint {
     visibility: hidden;
 }
+.tagline1Cont {
+    width: 100%;
+}
 .tagline1 {
+    margin: 0;
+    position: relative;
     font-size: 3rem;
-    color: var(--primary-color);
     font-weight: bolder;
-    animation: taglineAni 3s linear infinite;
+    color: var(--primary-color);
 }
-.tagline1 p::after {
-    animation: taglineAni 3s linear infinite;
+.taglineVir{
+    color: white;
+    visibility: hidden;
 }
-
-@keyframes taglineAni{
-    0%{
-        content: "F";
-    }
-    4% {
-        content: "Fr";
-    }
+.taglineAct{
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tagline-bottom {
+    font-size: 3.5rem;
 }
 .tag1Desc {
     font-size: 1.7rem;
@@ -60,6 +65,11 @@
     transform: translate(-4px, -4px);
     box-shadow: 3px 3px #444;
     color: #eee;
+}
+.heroRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .heroRight img{
     width: 70%;

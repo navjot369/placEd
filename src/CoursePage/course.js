@@ -19,11 +19,13 @@ function Course() {
         <AppLogo />
         <UserAccount isLogin=""/>
         <NavMenu />
+        <div className="course-Cont">
         <Section1 />
         <UspSection />
         <Features />
         <HiringSec />
         <SpeakerSec />
+        </div>
         <Footer />
     </div>);
 }
