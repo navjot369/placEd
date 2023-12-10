@@ -1,6 +1,6 @@
 import profile_pic from './Images/profile_pic.jpg';
 import searchSymbol from './Images/loupe.png';
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function AppLogo(props) {
@@ -34,7 +34,6 @@ function UserInfo(props) {
 function SearchBar() {
     const inputText = useRef();
     const clickit = () => {
-        console.log("hello");
         inputText.current.focus();
     }
     return (
@@ -48,11 +47,22 @@ function SearchBar() {
 }
 
 function NavMenu() {
-    return (<div className="navmenuCont">
-        <div className="navMenuInner">
-        <Link to={'/course/'} className="navOpt">Placement Assured Programs</Link>
-        <Link to={'/resources/'} className="navOpt">Placed Resources</Link>
-        <Link to={'/speaker/'} className="navOpt">Speakers at Placed</Link>
+    let [cName, setName] = useState("");
+    useEffect(() => {
+        window.addEventListener('scroll',() => {
+            if(window.scrollY > 50) {
+                setName("navTemp")
+            }
+            else {
+                setName("");
+            }
+        })
+    });
+    return (<div className={"navmenuCont outer" + cName}>
+        <div className={"navMenuInner inner" + cName}>
+        <Link to={'/course/'} className="navOpt">Programs</Link>
+        <Link to={'/resources/'} className="navOpt">Resources</Link>
+        <Link to={'/speaker/'} className="navOpt">Speakers</Link>
         </div>
     </div>);
 }

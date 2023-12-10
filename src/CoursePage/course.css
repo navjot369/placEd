@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
 
 :root {
-    --color1: #021028;
+    --color1: #008080;
+}
+.course-main-cont {
+    background-color: #f5f5f5;
 }
 .course-Cont {
     font-family: 'Montserrat', sans-serif;

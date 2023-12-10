@@ -56,7 +56,7 @@
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transition: 0.5s;
     text-decoration: none;
 }
@@ -95,8 +95,8 @@
     padding: 10px;
 }
 .sec2Question {
-    color: var(--primary-color);
-    font-size: 3rem;
+    color: black;
+    font-size: 4rem;
     font-weight: bold;
     text-align:center;
     margin: 100px 0;
@@ -125,24 +125,18 @@
     justify-content: center;
 }
 .StatsBox {
-    background-color: rgba(215, 212, 212, 0.5);
+    background-color: #1d195e;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    width: 30%;
-    min-height: 260px;
-    border-radius: 10px;
-    margin: 10px 10px;
-    box-shadow: 3px 3px 3px 3px rgb(192, 189, 189);
-}
-.statsImg {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-}
-.staticon {
-    height: 95px;
+    align-items: center;
+    padding: 30px 20px;
+    width: 25%;
+    min-height: 260px;
+    border-radius: 4px;
+    margin: 10px 10px;
+    color: white;
+    box-shadow: 3px 3px 3px 1px rgb(231, 224, 224);
 }
 .statsPara {
     font-size: 1.4rem;
@@ -152,8 +146,8 @@
 .statsValue {
     font-size: 2.8rem;
     font-weight: bold;
+    color: rgb(249, 233, 7);
     margin: 10px 0;
-    color: var(--primary-color);
 }
 .UspContainer {
     display: grid;

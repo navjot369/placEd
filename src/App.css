@@ -84,8 +84,8 @@
 }
 .search-container-inner {
   max-width: 70%;
-  width: 50vw;
-  border: 1px solid grey;
+  width: 62vw;
+  border: 2px solid rgb(208, 204, 204);
   background-color: white;
   border-radius: 6px;
   padding: 5px 10px;
@@ -112,33 +112,35 @@
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
   padding: 10px;
   border-bottom: 3px solid var(--primary-color);
   backdrop-filter: blur(0.8);
   background-color: rgba(255, 255, 255, 0.85);
   z-index: 12;
+  transition: 0.5s;
 }
 .navMenuInner {
-  max-width: 70%;
-  width: 60vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
+.outernavTemp {
+  padding-left: 180px;
+  padding-right: 60%; 
+}
 .navOpt {
-  color: var(--primary-color);
-  padding: 10px;
+  color: black;
+  padding: 6px 10px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: bold;
   z-index: 13;
-  margin: 0 10px;
-  min-width: 37%;
+  margin: 0 3px;
   font-family: inherit;
   text-decoration: none;
+  transition: 0.3s;
 }
 .navOpt:hover {
   color: var(--secondary-color);

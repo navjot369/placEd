@@ -46,8 +46,8 @@ function HeroSection() {
 function InnerStats(props) {
   return (
     <div className="StatsBox">
-      <div className="statsImg"><img src={props.icon} className="staticon" alt="Stats display"/></div>
-      <div className="statsPara"><span className="statsValue">{props.value} </span> {props.desp}</div>
+      <div className="statsValue">{props.value}</div> 
+      <div className="statsPara">{props.desp}</div>
     </div>
   );
 }
@@ -58,7 +58,7 @@ function Section2() {
       <img src={statsBackground} alt="Stats Background" />
       <div className="sec2Inner">
         <div className="sec2Question">
-          Are you going to be placed after your degree<span> ?</span>
+          Are you going to be placed<span> ?</span>
         </div>
         <div className="StatsCont">
           <InnerStats

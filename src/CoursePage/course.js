@@ -15,7 +15,7 @@ function Course() {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
-    return (<div>
+    return (<div className="course-main-cont">
         <AppLogo />
         <UserAccount isLogin=""/>
         <NavMenu />
